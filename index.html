@@ -1,0 +1,751 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Assignment</title>
+    <style>
+        *{
+            margin: 0%;
+            padding: 0%;
+            box-sizing: border-box;
+            font-family: system-ui;
+        }
+.header{
+ background-color: rgb(8, 8, 85);
+
+} 
+ul{
+    padding: 14px;
+}
+nav>ul>li{
+    display: inline;
+    color: white;
+    margin: 10px 20px ;
+    text-transform: capitalize;
+}
+nav>ul>li>span{
+    padding-right: 60px;
+    padding-left: 10px;
+    text-transform: uppercase;
+   
+}
+nav>button{
+border: none;
+background-color: rgb(8, 8, 85);
+color: white;
+font-family: 'Times New Roman', Times, serif;
+text-transform: capitalize;
+
+/* display: inline; */
+font-size: 17px;
+
+position: absolute;
+top: 15px;
+right: 250px;
+
+}
+nav>span>button{
+    border: none;
+background-color: rgba(29, 91, 226, 0.829);
+color: white;
+font-family: 'Times New Roman', Times, serif;
+text-transform: capitalize;
+
+/* display: inline; */
+font-size: 17px;
+
+position: absolute;
+top: 10px;
+right: 170px;
+padding: 5px;
+border-radius: 8px;
+}
+span>h5{
+  color: #23A6F0; 
+  text-align: center;
+  padding-top: 100px;
+  text-transform: uppercase;
+  
+}
+h1.home{
+  color: white;
+  text-align: center;
+  padding: 30px;
+
+  font-size: 60px;
+  text-transform: capitalize;
+}
+.homebody>p{
+  color: white;
+  text-align: center;
+  font-size: 25px;
+  padding-top: 10px;
+ line-height: 30px;
+}
+.homebody>span>button{
+  color:  rgba(29, 91, 226, 0.829);
+
+margin-top: 50px;
+
+  position: absolute;
+  left: 700px;
+  top: 430px;
+
+   padding:16px 45px;
+  border: 2px solid rgba(29, 91, 226, 0.829);
+border-radius: 5px;
+
+
+   background-color: rgb(8, 8, 85);
+font-weight: bold;
+}
+.homebody>.bodybutton{
+    color:white;
+
+
+
+margin-top: 25px;
+  position: absolute;
+  left: 480px;
+
+   padding:17px 45px;
+  border: none;
+border-radius: 5px;
+
+
+  background-color: rgba(29, 91, 226, 0.829);
+
+font-weight: bold;
+}
+.cardss{
+ display: flex;
+  margin-top: 40px;
+padding: 100px 10px 40px 270px;
+  
+}
+div>.card1{
+
+  background-color: white;
+
+  width: 260px;
+  height: 220px;
+  
+ 
+}
+.card1>.smallbox{
+  width: 50px;
+  height: 50px;
+  background-color: rgba(255, 160, 122, 0.329);
+  margin: 15px 0 10px 23px;
+  border-radius: 5px;
+  background-image: url(images/image7.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.card1>.train{
+  margin-top: 15px;
+  margin-left: 23px;
+  font-weight: bold;
+  font-family: sans-serif;
+  color: #252B42;
+}
+.card1>.linecard1{
+  margin: 20px 0 10px 23px;
+
+}
+.card1>.text{
+  margin: 18px 0 0 23px;
+  font-size: 13px;
+  color: #737373;
+  letter-spacing: 0.30px;
+  
+}
+div>.card2{
+
+  background-color: white;
+
+  width: 260px;
+  height: 220px;
+  margin-left: 20px;
+  
+ 
+}
+.card2>.smallbox2{
+  width: 50px;
+  height: 50px;
+  background-color: rgba(240, 128, 128, 0.404);
+  margin: 15px 0 10px 23px;
+  border-radius: 5px;
+  background-image: url(images/image8.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+ background-size: 25px;
+}
+.card2>.train2{
+  margin-top:15px;
+  margin-left: 23px;
+  font-weight: bold;
+  font-family: sans-serif;
+  color: #252B42;
+}
+.card2>.linecard2{
+  margin: 20px 0 10px 23px;
+
+}
+.card2>.text2{
+  margin: 18px 0 0 23px;
+  font-size: 13px;
+  color: #737373;
+  letter-spacing: 0.30px;
+  
+
+}
+div>.card3{
+
+
+
+  background: #23A6F0;
+
+  width: 260px;
+  height: 220px;
+  margin-left: 20px;
+  
+ 
+}
+.card3>.smallbox3{
+  width: 50px;
+  height: 50px;
+  background-color: white;
+  margin: 15px 0 10px 23px;
+  border-radius: 5px;
+  background-image:url(images/image9.jpg) ;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.card3>.train3{
+  margin-top:15px;
+  margin-left: 23px;
+  font-weight: bold;
+  font-family: sans-serif;
+  color: white;
+}
+.card3>.linecard3{
+  margin: 20px 0 10px 23px;
+
+}
+.card3>.text3{
+  margin: 18px 0 0 23px;
+  font-size: 13px;
+  color: white;
+  letter-spacing: 0.30px;
+  
+
+
+}
+.secondpage{
+  position: relative;
+  background-color: rgb(255, 255, 255);
+  width: 100vw;
+  height: 90vh;
+
+}
+.pagetext{
+  position: absolute;
+  left: 120px;
+ top:120px;
+  
+}
+.pagetext>h1{
+  font-size: 40px;
+  padding-top: 20px;
+  letter-spacing: 0.30px;
+}
+.pagetext>.text{
+  margin-top:40px;
+   color: #737373;
+   letter-spacing: 0.50px;
+}
+.pagetext>.sectext2{
+  color: #23A6F0;
+  margin-top: 40px;
+}
+.video{
+    display: flex;
+    /* flex-direction: column; */
+    gap: 35px;
+    margin-left: 100px;
+    margin-top: 90px;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+}
+.body_two{
+    margin-top: 200px;
+    /* background-color: aqua; */
+    /* max-width: 1500px; */
+    /* height: 800px; */
+}
+.body_two>.he{
+    margin-left: 100px;
+  
+}
+.body_two>.he>h4{
+    color:  rgb(0, 102, 255);
+    margin-bottom: 20px;
+    font-size: 14px;
+}
+.body_two>.he>h1{
+    margin-bottom: 10px;
+}
+.video h5:nth-child(2n-1){
+    background-color: red;
+    display: inline;
+    color: white;
+    padding: 5px;
+    font-size: 10px;
+    position: absolute;
+    top: 15px;
+    /* left: 10px; */
+    margin-left: 12px;
+    width: 40px;
+    text-align: center;
+}
+.video a{
+    color: black;
+    background-color: white;
+    border-radius: 5px;
+    height: 7px;
+    width: 7px;
+    /* padding: 2px; */
+    /* margin: 2.5px; */
+    /* margin-left: 20px; */
+    position: relative;
+    top: -20px;
+    right: 140px;
+}
+.video i{
+    padding: 2.5px;
+    margin: 2px 0px 2px 0px;
+}
+.video h3{
+    color:   rgb(0, 102, 255);
+}
+.pam{
+    position: relative;
+}
+.video .pam span i{
+    background-color: black;
+    width: 65px;
+    padding: 3px 0px 3px 5px;
+    border-radius: 10px;
+    position: absolute;
+    top: 23px;
+    right: 82px;
+}
+.video .pam span p{
+    color: white;
+    position: absolute;
+    top: 23px;
+    right: 90px;
+    padding: 3px 0px 3px 0px ;
+}
+.video h4{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-size: 12px;
+    letter-spacing: 1px;
+    font-weight: 1500;
+}
+.video .f>ul>li{
+    display: inline;
+    font-weight: 700;
+}
+.video .f>ul{
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.video .span>ul>li{
+    display: inline;
+}
+.video .span>ul>li{
+    color: gray;
+    font-weight: 800;
+}
+.video .span>ul>li>span{
+    color: green;
+    font-weight: 800;
+}
+.video .last>ul>li{
+    display: inline;
+}
+.video .last>ul{
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.video button{
+    background-color: white;
+    color:  rgb(0, 102, 255) ;
+    border: 2px solid   rgb(0, 102, 255);
+    border-radius: 40px;
+    width: 150px;
+    height: 50px;
+    font-size: 17px;
+    text-align: center;
+}
+.video{
+    margin-bottom: 50px;
+  }
+  .page5{
+    text-align: center;
+    margin: 80px 0;
+  }
+.page5>h3{
+  color: #23A6F0;
+  margin-bottom: 20px;
+
+}
+.page5>h1{
+  font-size: 50px;
+  margin-bottom: 10px;
+}
+.page5>p{
+  color: gray;
+  
+} 
+.page5>input{
+  border: none;
+  background-color: whitesmoke;
+  padding: 10px;
+  width: 600px;
+  height: 45px;
+  margin-top: 60px;
+}
+ .page5>.btn10{
+  height: 45px;
+  width: 150px;
+  background-color:  #23A6F0;
+  color: white;
+  border: none;
+  border-radius: 0 5px 5px 0;
+  margin:-5px;
+ }
+ .khatam{
+    background-color: rgb(0, 0, 29) ;
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
+footer{
+    display: flex;
+    gap: 100px;
+    margin-left: 70px;
+}
+footer ul li{
+    list-style: none;
+    padding: 10px;
+}
+footer ul{
+    color: white;
+}
+footer>ul>li>h2{
+    padding-bottom: 30px;
+    font-size: 28px;
+}
+footer>ul>li{
+    padding: 4px;
+}
+footer>ul>li>i{
+    padding: 15px;
+    margin-top: 15px;
+    font-size: 35px;
+}
+footer ul li h1{
+    margin-bottom: 30px;
+    margin-top: -5px;
+}
+footer .a ul li{
+    font-weight: 550;
+}
+    </style>
+</head>
+<body>
+ <div class="main">
+<div class="header">
+<nav>
+    <ul>
+      <li><span>farhan</span></li>  
+        <li>Home</li>
+        <li>Products</li>
+        <li>pricing</li>
+    <li>contact</li>
+    
+</ul>
+
+<button>login</button>
+ <span><button>join us</button></span>
+</nav>
+<div class="homebody">
+  <span><h5>welcome</h5></span>
+  <h1 class="home">Selling on the <br>internet like a pro</h1>
+  <p>we know how large objects will acts, but things on a <br> small scale just do not act that way.</p>
+  <button  class="bodybutton">Get Quete Now</button>
+  <span><button >Learn More</button></span>
+  
+</div>
+<div class="cardss">
+  
+   <div class="card1">
+   <div class="smallbox">
+     
+   </div>
+      <p class="train">training courses</p>                                 <div class="linecard1" style="width: 50px; height: 2px; background: #E74040"></div>                   
+                 <p class="text">   The gradual accumulation of <br>information about atomic and <br /> small-scale behaviour...</p>                
+
+                          
+   </div>    
+<div class="card2">
+   <div class="smallbox2">
+
+     
+
+   </div>
+      <p class="train2">2,769 online courses</p>                              <div class="linecard2" style="width: 50px; height: 2px; background: #E74040"></div>
+                 <p class="text2">   The gradual accumulation of <br>information about atomic and <br /> small-scale behaviour...</p>        
+</div>
+  <div class="card3">
+       <div class="smallbox3">
+
+
+
+     
+
+   </div>
+      <p class="train3">training courses</p>                              <div class="linecard3" style="width: 50px; height: 2px; background: white"></div>
+                 <p class="text3">   The gradual accumulation of <br>information about atomic and <br /> small-scale behaviour...</p>        
+  </div>        
+
+   </div>                 
+
+</div>
+
+  
+</div>
+ </div>
+ <div class="secondpage">
+
+  <div class="pagetext">
+
+      <div style="width: 94px; height: 7px; background: #E74040"></div>"
+    <h1 >packages that are <br> aprodable</h1>
+    <p class="text">Problems trying to resolve the conflict between <br/>the two major realms of Classical physics: <br/>Newtonian mechanics </p>
+    <p class="sectext2">Learn More                       
+  </div>
+ <div class="secimages">
+<img src="images/image4.jpg"  alt="" style="object-fit: cover; width: 100vw ; height: 80vh;">
+
+
+ </div>
+</div>
+  
+  <div class="body_two">
+    <div class="he"><h4>Practice Advice</h4>
+     <h1>Make online education accessible</h1>
+ <p>Problems trying to resolve the conflict between</p>
+ <p>the two major realms of Classical physics: Newtonian mechanics</p></div> 
+ <div class="video">
+     <div class="video-one">
+         <h5>Sale</h5>
+         <img src="images/image1.jpg" alt="" width="190px" height="250px" style="object-fit: cover;">
+          <a href="/"><!--<i class="fa-light fa-heart fa-fade"></i>--><i class="fa-solid fa-heart"></i></a>
+          <a href="/"><i class="fa-solid fa-cart-shopping"></i></a>
+          <a href="/"><i class="fa-solid fa-eye"></i></a>
+         <span class="pam"><h3>English</h3>
+          <span><i class="fa-solid fa-star" style="color: #FFD43B;"></i>k
+         <p>4.9</p>
+         </span> 
+         <h4>Graphic Design</h4>
+         <p>We focus on ergonomics</p>
+         <p>and meeting you....</p>
+         <div class="f">
+             <ul>
+                 <li><i class="fa-solid fa-download"></i></li>
+                 <li>15 Sales</li>
+             </ul>
+         </div>
+         <div class="span">
+             <ul>
+                 <li>$16.48</li>
+                 <li><span>$6.48</span></li>
+             </ul>
+         </div>
+         <div class="last">
+             <ul>
+                 <li><img src="img/COLOURBOX26602394.webp" alt="" width="15px" height="15px">Pro...</li>
+                 <li> <i class="fa-solid fa-water" style="color: #a80022;"></i>64 Les...</li>
+                 <li> <img src="img/COLOURBOX26602394.webp" alt="" width="15px" height="15px">24hr..</li>
+             </ul>
+             </div>
+         <button>Learn more<i class="fa-solid fa-chevron-right"></i></button>
+         </span>
+     </div>
+     <div class="video_two">
+         <h5>Sale</h5>
+         <img src="images/image2.jpg" alt="" width="190px" height="250px" style="object-fit: cover;">
+          <a href="/"><!--<i class="fa-light fa-heart fa-fade"></i>--><i class="fa-solid fa-heart"></i></a>
+          <a href="/"><i class="fa-solid fa-cart-shopping"></i></a>
+          <a href="/"><i class="fa-solid fa-eye"></i></a>
+          <span class="pam"><h3>English</h3>
+          <span><i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+         <p>4.9</p>
+         </span> 
+         <h4>Graphic Design</h4>
+         <p>We focus on ergonomics</p>
+         <p>and meeting you....</p>
+         <div class="f">
+             <ul>
+                 <li><i class="fa-solid fa-download"></i></li>
+                 <li>15 Sales</li>
+             </ul>
+         </div>
+         <div class="span">
+             <ul>
+                 <li>$16.48</li>
+                 <li><span>$6.48</span></li>
+             </ul>
+         </div>
+         <div class="last">
+             <ul>
+                 <li><img src="img/COLOURBOX26602394.webp" alt="" width="15px" height="15px">Pro...</li>
+                 <li> <i class="fa-solid fa-water" style="color: #a80022;"></i>64 Les...</li>
+                 <li> <img src="img/COLOURBOX26602394.webp" alt="" width="15px" height="15px">24hr..</li>
+             </ul>
+             </div>
+         <button>Learn more<i class="fa-solid fa-chevron-right"></i></button>
+         </span>
+     </div>
+     <div class="video_three">
+         <h5>Sale</h5>
+         <img src="images/image3.jpg" alt="" width="190px" height="250px"  style="object-fit: cover;">
+          <a href="/"><!--<i class="fa-light fa-heart fa-fade"></i>--><i class="fa-solid fa-heart"></i></a>
+          <a href="/"><i class="fa-solid fa-cart-shopping"></i></a>
+          <a href="/"><i class="fa-solid fa-eye"></i></a>
+          <span class="pam"><h3>English</h3>
+          <span><i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+         <p>4.9</p>
+         </span> 
+         <h4>Graphic Design</h4>
+         <p>We focus on ergonomics</p>
+         <p>and meeting you....</p>
+         <div class="f">
+             <ul>
+                 <li><i class="fa-solid fa-download"></i></li>
+                 <li>15 Sales</li>
+             </ul>
+         </div>
+         <div class="span">
+             <ul>
+                 <li>$16.48</li>
+                 <li><span>$6.48</span></li>
+             </ul>
+         </div>
+         <div class="last">
+             <ul>
+                 <li><img src="img/COLOURBOX26602394.webp" alt="" width="15px" height="15px">Pro...</li>
+                 <li> <i class="fa-solid fa-water" style="color: #a80022;"></i>64 Les...</li>
+                 <li> <img src="img/COLOURBOX26602394.webp" alt="" width="15px" height="15px">24hr..</li>
+             </ul>
+             </div>
+         <button>Learn more<i class="fa-solid fa-chevron-right"></i></button>
+     </span>
+     </div>
+     <div class="video_four">
+         <h5>Sale</h5>
+         <img src="images/image6.jpg" alt="" width="193px" height="253px" style="object-fit: cover;">
+          <a href="/"><!--<i class="fa-light fa-heart fa-fade"></i>--><i class="fa-solid fa-heart"></i></a>
+          <a href="/"><i class="fa-solid fa-cart-shopping"></i></a>
+          <a href="/"><i class="fa-solid fa-eye"></i></a>
+          <span class="pam"><h3>English</h3>
+          <span><i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+         <p>4.9</p>
+         </span> 
+         <h4>Graphic Design</h4>
+         <p>We focus on ergonomics</p>
+         <p>and meeting you....</p>
+         <div class="f">
+             <ul>
+                 <li><i class="fa-solid fa-download"></i></li>
+                 <li>15 Sales</li>
+             </ul>
+         </div>
+         <div class="span">
+             <ul>
+                 <li>$16.48</li>
+                 <li><span>$6.48</span></li>
+             </ul>
+         </div>
+         <div class="last">
+             <ul>
+                 <li><img src="img/COLOURBOX26602394.webp" alt="" width="15px" height="15px">Pro...</li>
+                 <li> <i class="fa-solid fa-water" style="color: #a80022;"></i>64 Les...</li>
+                 <li> <img src="img/COLOURBOX26602394.webp" alt="" width="15px" height="15px">24hr..</li>
+             </ul>
+             </div>
+         <button>Learn more<i class="fa-solid fa-chevron-right"></i></button>
+         </span>
+     </div>
+
+     
+
+
+     
+ </div> <!--this is video-->
+ <div class="page5">
+  <h3>Practice Advice</h3>
+  <h1>Featured Products </h1>
+  <p>Problems trying to resolve the  confilict between <br>the two major realms of classical physics .Newtonian mechanics</p>
+
+
+  <input type="email" placeholder="Your Email">
+  <button class="btn10">Suscribe</button>
+ </div>
+
+
+ <div class="khatam">
+  <footer>
+      <ul>
+          <li><h2>Get In Touch</h2></li>
+          <li><p>the quick fox jumps over the </p></li>
+          <li><p>lazy dog</p></li>
+          <li> <i class="fa-brands fa-facebook" style="color: #134190;"></i>&nbsp; <i class="fa-brands fa-instagram" style="color: #12449b;"></i>&nbsp; <i class="fa-brands fa-x-twitter" style="color: #12449b;"></i></li>
+      </ul>
+      <span class="a"> <ul>
+          <li><h1>Company info</h1></li>
+          <li>About Us</li>
+          <li>Carrier</li>
+          <li>We are hiring</li>
+          <li>Blog</li>
+      </ul></span>
+      <span class="a"><ul>
+          <li><h1>Features</h1></li>
+          <li>Business Marketing</li>
+          <li>User Analytic</li>
+          <li>Live Chat</li>
+          <li>Unlimited Support</li>
+      </ul></span>
+      <span class="a"><ul>
+          <li><h1>Resources</h1></li>
+          <li>IOS & Android</li>
+          <li>Watch a Demo</li>
+          <li>Customers</li>
+          <li>API</li>
+      </ul></span>
+  </footer>
+</div>
+
+
+
+  </div>
+
+</body>
+</html>
